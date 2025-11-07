@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DNS TXT Shortener</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f3f4f6; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    .card { background: white; padding: 2em; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+    input { width: 300px; padding: 0.5em; margin-right: 1em; }
+    button { background: #2563eb; color: white; border: none; padding: 0.5em 1em; border-radius: 8px; cursor: pointer; }
+    button:hover { background: #1e40af; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>DNS TXT Shortener</h1>
+    <form action="/crear" method="post">
+      <input type="url" name="url" placeholder="https://ejemplo.com" required>
+      <button type="submit">Crear registro</button>
+    </form>
+  </div>
+</body>
+</html>
